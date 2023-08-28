@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- Contenedor Principal Inicio -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <form action="">
+                    <!-- Card del Encabezado - Inicio -->
+                    <div class="card">
+                        <!--  Título del Maestro - Inicio -->
+                        <div class="card-header text-white bg-primary">
+                            <h4>Proveedores - Clientes</h4>
+                        </div>
+                        <!--  Título del Maestro - Fin -->
+
+                        <!--  Cuerpo del Maestro - Inicio -->
+                        <div class="card-body bg-primary bg-opacity-25">
+                            <div class="row border border-primary rounded my-1">
+                                <div class="col-md-4">
+                                    <h4>Categoría</h4>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="proveedor" name="categorias[]" value="Proveedor" style="background-color: #6d6e70; border-color: #0000ff;">
+                                        <label class="form-check-label" for="proveedor">
+                                        Proveedor
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="cliente" name="categorias[]" value="Cliente" style="background-color: #6d6e70; border-color: #0000ff;">
+                                        <label class="form-check-label" for="cliente">
+                                        Cliente
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="personal" name="categorias[]" value="Personal" style="background-color: #6d6e70; border-color: #0000ff;">
+                                        <label class="form-check-label" for="gasto">
+                                        Personal
+                                        </label>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <h4>Datos Generales</h4>
+                            </div>
+
+                            <div class="row mt-1">
+                                <div class="col-md-3 bg-primary text-white">
+                                    <label >Condición</label>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <select id="cboCondicion" class="form-select border border-primary">
+                                    </select>
+                                </div>
+
+                            </div>
+
+                            <div class="row mt-1">
+                                <div class="col-md-3 col-form-label bg-primary text-white">
+                                    <label >Nro. de Orden</label>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <input type="text" id="idNroOrden" class="form-control border border-primary" placeholder="" readonly>
+                                </div>
+
+                                <div class="col-md-3 bg-primary text-white">
+                                    <label >Procedencia</label>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <select id="cboProcedencia" class="form-select border border-primary">
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row mt-1">
+                                <div class="col-md-3 bg-primary text-white">
+                                    <label >Nombre</label>
+                                </div>
+
+                                <div class="col-md-9">
+                                    <input type="text" id="idNombre" class="form-control border border-primary" placeholder="Digite el Nombre">
+                                </div>
+                            </div>
+
+                            <div class="row mt-1">
+                                <div class="col-md-3 bg-primary text-white">
+                                    <label >Tipo de Documento</label>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <select id="cboTipoDocumento" class="form-select border border-primary">
+                                    </select>
+                                </div>
+
+                                <div class="col-md-3 bg-primary text-white">
+                                    <label >Número de Documento</label>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <input type="text" id="idNumeroDocumento" class="form-control border border-primary" placeholder="Digite el Número de Documento">
+                                </div>
+                                
+                            </div>
+
+                            <div class="row mt-1">
+                                <div class="col-md-3 bg-primary text-white">
+                                    <label >Dirección</label>
+                                </div>
+
+                                <div class="col-md-9">
+                                    <input type="text" id="idDireccion" class="form-control border border-primary" placeholder="Digite la Dirección">
+                                </div>
+                            </div>
+
+                            <div class="row mt-1">
+                                <div class="col-md-3 bg-primary text-white">
+                                    <label >Localidad</label>
+                                </div>
+
+                                <div class="col-md-9">
+                                    <input type="text" id="idLocalidad" class="form-control border border-primary" placeholder="Digite la Localidad">
+                                </div>
+                            </div>
+
+                            <div class="row mt-1">
+                                <div class="col-md-3 bg-primary text-white">
+                                    <label >Referencia</label>
+                                </div>
+
+                                <div class="col-md-9">
+                                    <textarea class="form-control border border-primary" id="idReferencia" rows="5"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="row mt-1">
+                                <div class="col-md-3 bg-primary text-white">
+                                    <label >Teléfonos</label>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <input type="text" id="idTelefonos" class="form-control border border-primary" placeholder="Digite los teléfonos">
+                                </div>
+
+                                <div class="col-md-3 bg-primary text-white">
+                                    <label >Ubigeo</label>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <input type="text" id="idUbigeo" class="form-control border border-primary" placeholder="Digite el Ubigeo">
+                                </div>
+                            </div>
+
+                            <div class="row mt-1">
+                                <div class="col-md-3 bg-primary text-white">
+                                    <label >e-MAIL</label>
+                                </div>
+
+                                <div class="col-md-9">
+                                    <input type="text" id="idEmail" class="form-control border border-primary" placeholder="Digite el e-MAIL">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <h4>Datos del Vendedor</h4>
+                            </div>
+
+                            <div class="row mt-1">
+                                <div class="col-md-3 bg-primary text-white">
+                                    <label >Vendedor</label>
+                                </div>
+
+                                <div class="col-md-9">
+                                    <input type="text" id="idVendedor" class="form-control border border-primary" placeholder="Digite el Vendedor">
+                                </div>
+                            </div>
+
+                            <div class="row mt-1">
+                                <div class="col-md-3 bg-primary text-white">
+                                    <label >Clasificador</label>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <select id="cboTipoDocumento" class="form-select border border-primary">
+                                    </select>
+                                </div>
+
+                                <div class="col-md-3 bg-primary text-white">
+                                    <label >Tipo de Cliente</label>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <select id="cboTipoCliente" class="form-select border border-primary">
+                                    </select>
+                                </div>
+                                
+                            </div>
+
+                            
+
+                        </div>
+                        <!--  Cuerpo del Maestro - Fin -->
+                    </div>
+                </form>
+            </div>
+        </div>            
+    </div>
+    <!-- Contenedor Principal Inicio -->
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- Contenedor Principal Inicio -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <form action="">
+                    <!-- Card del Encabezado - Inicio -->
+                    <div class="card">
+                        <!--  Título del Maestro - Inicio -->
+                        <div class="card-header text-white bg-primary">
+                            <h4>Productos</h4>
+                        </div>
+                        <!--  Título del Maestro - Fin -->
+            
+                        <!--  Cuerpo Maestro - Inicio -->
+                        <div class="card-body bg-primary bg-opacity-25">
+                            <div class="row border border-primary rounded my-1">
+                                <div class="col-md-4">
+                                    <h4>Categoría</h4>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="mercaderia" name="categorias[]" value="Mercaderia" style="background-color: #6d6e70; border-color: #0000ff;">
+                                        <label class="form-check-label" for="mercaderia">
+                                        Mercadería
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="insumo" name="categorias[]" value="Insumo" style="background-color: #6d6e70; border-color: #0000ff;">
+                                        <label class="form-check-label" for="insumo">
+                                        Insumo
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gasto" name="categorias[]" value="Gasto" style="background-color: #6d6e70; border-color: #0000ff;">
+                                        <label class="form-check-label" for="gasto">
+                                        Gasto
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="servicio" name="categorias[]" value="Servicio" style="background-color: #6d6e70; border-color: #0000ff;">
+                                        <label class="form-check-label" for="servicio">
+                                        Servicio
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <h4>Detalle del Producto</h4>
+                            </div>
+
+                            <div class="row mt-1">
+                                <div class="col-md-3 bg-primary bg-opacity-75 text-white">
+                                    <label >Condición</label>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <select id="cboCondicion" class="form-select border border-primary">
+                                    </select>
+                                </div>
+
+                                <div class="col-md-3 bg-primary bg-opacity-75 text-white">
+                                    <label >Código SUNAT</label>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <input type="text" id="idCodigoSunat" class="form-control border border-primary" placeholder="Digite el Código SUNAT">
+                                </div>
+                                
+                            </div>
+
+                            <div class="row mt-1">
+                                <div class="col-md-3 bg-primary bg-opacity-75 text-white">
+                                    <label >Código Único</label>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <input type="text" id="idCodigoUnico" class="form-control border border-primary" placeholder="Digite el Código Único">
+                                </div>
+
+                                <div class="col-md-3 bg-primary bg-opacity-75 text-white">
+                                    <label >Código DIREMID</label>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <input type="text" id="idCodigoDiremid" class="form-control border border-primary" placeholder="Digite el Código DIREMID">
+                                </div>
+                            </div>
+
+                            <div class="row mt-1">
+                                <div class="col-md-3 bg-primary text-white">
+                                    <label >Descripción</label>
+                                </div>
+
+                                <div class="col-md-9">
+                                    <input type="text" id="idDescripcion" class="form-control border border-primary" placeholder="Digite la Descripción del Producto">
+                                </div>
+                            </div>
+
+                            <div class="row mt-1">
+                                <div class="col-md-3 bg-primary text-white">
+                                    <label >Unidad</label>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <input type="text" id="idUnidad" class="form-control border border-primary" placeholder="Código de Unidad">
+                                </div>
+
+                                <div class="col-md-4">
+                                    <select id="cboUnidad" class="form-select border border-primary">
+                                    </select>
+                                </div>
+                                
+                            </div>
+
+                            <div class="row mt-1">
+                                <div class="col-md-3 bg-primary text-white">
+                                    <label >Línea - Familia</label>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <input type="text" id="idLinea" class="form-control border border-primary" placeholder="Código de Línea">
+                                </div>
+
+                                <div class="col-md-4">
+                                    <select id="cboLinea" class="form-select border border-primary">
+                                    </select>
+                                </div>
+                                
+                            </div>
+
+                            <div class="row mt-1">
+                                <div class="col-md-3 bg-primary text-white">
+                                    <label >SubLínea - SubFamilia</label>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <input type="text" id="idSubLinea" class="form-control border border-primary" placeholder="Código de SubLínea">
+                                </div>
+
+                                <div class="col-md-4">
+                                    <select id="cboSubLinea" class="form-select border border-primary">
+                                    </select>
+                                </div>
+                                
+                            </div>
+
+                            <div class="row mt-1">
+                                <div class="col-md-3 bg-primary text-white">
+                                    <label >Categoría</label>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <input type="text" id="idCategoria" class="form-control border border-primary" placeholder="Código de Categoría">
+                                </div>
+
+                                <div class="col-md-4">
+                                    <select id="cboCategoria" class="form-select border border-primary">
+                                    </select>
+                                </div>
+                                
+                            </div>
+
+                            <div class="row mt-1">
+                                <div class="col-md-3 bg-primary text-white">
+                                    <label >SubProveedor / Lab.</label>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <input type="text" id="idSubProveedor" class="form-control border border-primary" placeholder="Código de SubProveedor">
+                                </div>
+
+                                <div class="col-md-7">
+                                    <select id="cboSubProveedor" class="form-select border border-primary">
+                                    </select>
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="row mt-1">
+                                <div class="col-md-3 bg-primary text-white">
+                                    <label >Marca</label>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <select id="cboMarca" class="form-select border border-primary">
+                                    </select>
+                                </div>
+
+                                <div class="col-md-3 bg-primary text-white">
+                                    <label >Modelo</label>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <input type="text" id="idModelo" class="form-control border border-primary" placeholder="Digite el Modelo">
+                                </div>
+                                
+                            </div>
+
+                            <div class="row mt-1">
+                                <div class="col-md-3 bg-primary text-white">
+                                    <label >Observación</label>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <input type="text" id="idObservacion" class="form-control border border-primary" placeholder="Digite la Observación">
+                                </div>
+
+                                <div class="col-md-3 bg-primary text-white">
+                                    <label >Ubicación</label>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <input type="text" id="idUbicacion" class="form-control border border-primary" placeholder="Digite la Ubicación">
+                                </div>
+                                
+                            </div>
+
+                            <div class="row mt-1">
+                                <div class="col-md-12">
+                                    <textarea class="form-control border border-primary" id="obsTextarea" rows="5"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                
+                                <!-- Costo del Producto -->
+                                <div class="col-md-5">
+                                    <h4>Costo del Producto</h4>
+
+                                    <div class="row mt-1">
+                                        <div class="col-md-6 bg-primary text-white">
+                                            <label >Moneda</label>
+                                        </div>
+        
+                                        <div class="col-md-6">
+                                            <select id="cboDepartamento" class="form-select border border-primary">
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-1">
+                                        <div class="col-md-6 bg-primary text-white">
+                                            <label >Compra</label>
+                                        </div>
+        
+                                        <div class="col-md-6">
+                                            <input type="text" id="idMonedaCompra" class="form-control border border-primary" placeholder="Tasa de Compra">
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-1">
+                                        <div class="col-md-6 bg-primary text-white">
+                                            <label >T/C</label>
+                                        </div>
+        
+                                        <div class="col-md-6">
+                                            <input type="text" id="idTC" class="form-control border border-primary" placeholder="T/C">
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-1">
+                                        <div class="col-md-6 bg-primary text-white">
+                                            <label >Peso Kg.</label>
+                                        </div>
+        
+                                        <div class="col-md-6">
+                                            <input type="text" id="idPeso" class="form-control border border-primary" placeholder="Peso">
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-1">
+                                        <div class="col-md-6 bg-primary text-white">
+                                            <label >Flete S/.</label>
+                                        </div>
+        
+                                        <div class="col-md-6">
+                                            <input type="text" id="idFlete" class="form-control border border-primary" placeholder="Flete">
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-1">
+                                        <div class="col-md-6 bg-primary text-white">
+                                            <label >Otros S/.</label>
+                                        </div>
+        
+                                        <div class="col-md-6">
+                                            <input type="text" id="idOtros" class="form-control border border-primary" placeholder="Otros">
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-1">
+                                        <div class="col-md-6 bg-primary text-white">
+                                            <label >Total Costos S/.</label>
+                                        </div>
+        
+                                        <div class="col-md-6">
+                                            <input type="text" id="idTotalCostos" class="form-control border border-primary" readonly>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-1">
+                                        <div class="col-md-6 bg-primary text-white">
+                                            <label >Stock Mínimo</label>
+                                        </div>
+        
+                                        <div class="col-md-6">
+                                            <input type="text" id="idStockMinimo" class="form-control border border-primary" readonly>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-1">
+                                        <div class="col-md-6 bg-primary text-white">
+                                            <label >Stock Máximo</label>
+                                        </div>
+        
+                                        <div class="col-md-6">
+                                            <input type="text" id="idStockMinimo" class="form-control border border-primary" readonly>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+
+                                <!-- Precio de Venta -->
+                                <div class="col-md-5">
+                                    <h4>Precio de Venta</h4>
+                                    
+                                    <div class="row mt-1">
+                                        <div class="col-md-6 bg-primary text-white">
+                                            <label >Moneda</label>
+                                        </div>
+        
+                                        <div class="col-md-6">
+                                            <select id="cboMonedaVenta" class="form-select border border-primary">
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-1">
+                                        <div class="col-md-3 bg-primary text-white">
+                                            <label >Precio 1</label>
+                                        </div>
+        
+                                        <div class="col-md-5">
+                                            <input type="text" id="idPrecio1" class="form-control border border-primary">
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <input type="text" id="idPrecio1Calc" class="form-control border border-primary" readonly>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-1">
+                                        <div class="col-md-3 bg-primary text-white">
+                                            <label >Precio 2</label>
+                                        </div>
+        
+                                        <div class="col-md-5">
+                                            <input type="text" id="idPrecio2" class="form-control border border-primary">
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <input type="text" id="idPrecio2Calc" class="form-control border border-primary" readonly>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-1">
+                                        <div class="col-md-3 bg-primary text-white">
+                                            <label >Precio 3</label>
+                                        </div>
+        
+                                        <div class="col-md-5">
+                                            <input type="text" id="idPrecio3" class="form-control border border-primary">
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <input type="text" id="idPrecio3Calc" class="form-control border border-primary" readonly>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-1">
+                                        <div class="col-md-3 bg-primary text-white">
+                                            <label >Precio 4</label>
+                                        </div>
+        
+                                        <div class="col-md-5">
+                                            <input type="text" id="idPrecio4" class="form-control border border-primary">
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <input type="text" id="idPrecio4Calc" class="form-control border border-primary" readonly>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-1">
+                                        <div class="col-md-6 bg-primary text-white">
+                                            <label >Precio Minimo</label>
+                                        </div>
+        
+                                        <div class="col-md-6">
+                                            <input type="text" id="idPrecioMinimo" class="form-control border border-primary">
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-1">
+                                        <div class="col-md-6 bg-primary text-white">
+                                            <label >Promedio</label>
+                                        </div>
+        
+                                        <div class="col-md-6">
+                                            <input type="text" id="idPromedio" class="form-control border border-primary">
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-1">
+                                        <div class="col-md-6 bg-primary text-white">
+                                            <label >Almacén</label>
+                                        </div>
+        
+                                        <div class="col-md-6">
+                                            <select id="cboAlmacen" class="form-select border border-primary">
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-1">
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="inventariado" name="inventariado" value="Mercaderia" style="background-color: #6d6e70; border-color: #0000ff;">
+                                                <label class="form-check-label" for="inventariado">
+                                                Inventariado
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- Tipo de Venta -->
+                                <div class="col-md-2">
+                                    <h4>Tipo de Venta</h4>
+
+                                    <div class="row border my-1">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="mercaderia" name="tipoventa[]" value="Presentaciones" style="background-color: #6d6e70; border-color: #0000ff;">
+                                                <label class="form-check-label" for="presentaciones">Presentaciones</label>
+                                            </div>
+                                        
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="combokit" name="tipoventa[]" value="ComboKit" style="background-color: #6d6e70; border-color: #0000ff;">
+                                                <label class="form-check-label" for="combokit">Combo / Kit</label>
+                                            </div>
+                                        
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="ventafracciones" name="tipoventa[]" value="VentaFracciones" style="background-color: #6d6e70; border-color: #0000ff;">
+                                                <label class="form-check-label" for="ventafracciones">Venta Fracciones Kg</label>
+                                            </div>
+                                        
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="bonificacion" name="tipoventa[]" value="Bonificacion" style="background-color: #6d6e70; border-color: #0000ff;">
+                                                <label class="form-check-label" for="bonificacion">Bonificación</label>
+                                            </div>
+                                        
+                                    </div>
+
+                                    <div class="row border my-1">
+                                        <div class="col-md-12 bg-primary text-white">
+                                            <label for="idComisionVenta">Comisión Venta (%)</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="row border my-1">
+                                        <input type="text" id="idComisionVenta" class="form-control border border-primary">
+                                    </div>
+
+
+                                    <div class="row border my-1">
+                                        <div class="col-md-12 bg-primary text-white">
+                                            <label for="idGrupo">GRUPO</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="row border my-1">
+                                        <div class="col-md-12">
+                                            <select id="cboGrupo" class="form-select border border-primary">
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-1">
+                                        <div class="col-md-12">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="balanza" name="balanza" value="Balanza" style="background-color: #6d6e70; border-color: #0000ff;">
+                                                <label class="form-check-label" for="balanza">
+                                                BALANZA
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-1">
+                                        <div class="col-md-12">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="icbper" name="icbper" value="icbper" style="background-color: #6d6e70; border-color: #0000ff;">
+                                                <label class="form-check-label" for="icbper">
+                                                Afecto a ICBPER
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                           
+                        </div>
+                        <!--  Cuerpo Maestro - Fin -->
+                    </div> 
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Contenedor Principal Inicio -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
